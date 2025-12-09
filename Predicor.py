@@ -28,7 +28,7 @@ if 'show_sell' not in st.session_state:
 USD_TO_PHP = 59.14
 
 st.title("Stock Price Analysis Application")
-st.info(f"International Stocks: Yahoo Finance | 🇵🇭 Philippine Stocks: Yahoo Finance with .PS suffix | Live Exchange Rate: 1 USD = ₱{USD_TO_PHP:.2f}")
+st.info(f"International Stocks: Yahoo Finance | Live Exchange Rate: 1 USD = ₱{USD_TO_PHP:.2f}")
 
 # Helper text
 st.caption("International stocks:** AAPL, TSLA, MSFT")
@@ -861,4 +861,5 @@ if symbol:
         st.info("**Tips:**\n- For international stocks: Use symbols like AAPL, TSLA, GOOGL\n- For Philippine stocks: Add .PS suffix like JFC.PS, SM.PS, BDO.PS, or just type JFC, SM, BDO (auto-adds .PS)")
 else:
     st.write("Enter a stock symbol above to get started.")
+
 
